@@ -1,10 +1,9 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../api/client";
 import { useAuthStore } from "../store/authStore";
 import FlipCard from "../components/FlipCard";
 
-interface Choice   { id: number; choice_text: string; is_correct: boolean; }
 interface Question {
   question_id:   string;
   prompt_text:   string;

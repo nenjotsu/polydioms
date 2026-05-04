@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./FlipCard.css";
 
-interface Choice { id: number; choice_text: string; is_correct: boolean; }
-
 interface Props {
   question: string;
   originalText: string;
