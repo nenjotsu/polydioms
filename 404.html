@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Polydioms</title>
+  <script>
+    // Redirect back to index with the path as a query param
+    const path = window.location.pathname.replace('/polydioms', '');
+    window.location.replace(
+      '/polydioms/?redirect=' + encodeURIComponent(path)
+    );
+  </script>
+</head>
+<body></body>
+</html>
