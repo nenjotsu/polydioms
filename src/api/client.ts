@@ -3,9 +3,6 @@ const API_BASE = import.meta.env.VITE_API_BASE;
 async function apiFetch<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = localStorage.getItem("pd_token");
 
-  console.log(API_BASE);
-  
-
   const res = await fetch(`${API_BASE}/${endpoint}`, {
     ...options,
     headers: {
